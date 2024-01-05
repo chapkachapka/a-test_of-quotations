@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" epub:prefix="z3998: http://www.daisy.org/z3998/2012/vocab/structure/, se: https://standardebooks.org/vocab/1.0" xml:lang="en-GB">
+	<head>
+		<title>Quote Test</title>
+		<link href="../css/core.css" rel="stylesheet" type="text/css"/>
+		<link href="../css/local.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body epub:type="bodymatter z3998:fiction">
+		<section id="quote-test" epub:type="chapter">
+			<h2 epub:type="title">Quote Test</h2>
+
+<!-- This section tests lint -->
+
+			<p>“Paragraph 1 starts with a double quote but has an internal ‘single quote’ in it.</p>
+			<p>Lint warns us (t-051) that the following paragraph is missing an opening quotation mark.</p>
+			<p>Paragraph 2. “Here the double quote is internal, again with an internal ‘single quote’ in it.</p>
+			<p>This time, lint doesn't warn us (t-051) that the following paragraph is missing an opening quotation mark.</p>
+
+
+<!-- This section tests british2american -->
+
+			<p>‘The b2a script,’ apparently, ‘doesn't work if the closing single quote is followed by a word joiner’⁠</p>
+			<p>‘Or by an em dash, with or without a word joiner’—</p>
+			<p>‘This may seem like an edge case, but’⁠—</p>
+			<p>—‘it's common in many eighteenth century texts.’</p>
+			<p>The same thing happens if the ‘end quote is preceded by a tag. <i xml:lang="es">Si!</i>’</p>
+		</section>
+	</body>
+</html>
